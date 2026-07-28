@@ -1,83 +1,77 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexShield SaaS - Global Checkout</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-950 text-white min-h-screen flex flex-col items-center justify-center p-6">
-
-    <div class="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl">
-        
-        <div class="text-center mb-6">
-            <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/20">
-                NexShield SaaS
-            </span>
-            <h1 class="text-2xl font-black mt-3">Global USD Checkout</h1>
-            <p class="text-slate-400 text-xs mt-1">Next-Gen Security & Anti-Bot Protection</p>
-        </div>
-
-        <form action="#" method="POST" class="space-y-4">
-            
-            <!-- सब कुछ बॉक्स के अंदर ($20 बेसिक प्लान के साथ) -->
-            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 space-y-3">
-                <div>
-                    <label class="block text-xs text-slate-400 mb-1">1. Select Subscription Plan</label>
-                    <select id="planSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white font-bold focus:outline-none focus:border-blue-500" onchange="updateTotal()">
-                        <option value="20">Basic Plan - $20.00</option>
-                        <option value="80">Standard Plan - $80.00</option>
-                        <option value="90">Pro Plan - $90.00</option>
-                        <option value="125">Advanced Plan - $125.00</option>
-                        <option value="169" selected>Premium SaaS Model - $169.00</option>
-                    </select>
-                </div>
-
-                <div class="flex justify-between items-center pt-2 border-t border-slate-800">
-                    <span class="text-xs text-slate-400">Total Final Amount</span>
-                    <span id="totalDisplay" class="text-xl font-black text-blue-400">$169.00</span>
-                </div>
-            </div>
-
-            <div>
-                <label class="block text-xs font-medium text-slate-300 mb-1">2. Full Name</label>
-                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-blue-500">
-            </div>
-
-            <div>
-                <label class="block text-xs font-medium text-slate-300 mb-1">3. Email Address</label>
-                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-blue-500">
-            </div>
-
-            <div>
-                <label class="block text-xs font-medium text-slate-300 mb-1">4. Passport / Phone (Anti-Fraud ID)</label>
-                <input type="text" required placeholder="Enter ID or Phone Number" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm text-white focus:outline-none focus:border-blue-500">
-            </div>
-
-            <div class="flex items-start space-x-2 pt-1">
-                <input type="checkbox" required class="mt-1 rounded bg-slate-950 border-slate-800 text-blue-600 focus:ring-0">
-                <label class="text-[11px] text-slate-400 leading-relaxed">
-                    5. I agree to terms, rate-limiting rules, and automated 100% secure bot protection checks.
-                </label>
-            </div>
-
-            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-lg transition text-sm shadow-lg shadow-blue-600/30">
-                Pay Securely Now
-            </button>
-        </form>
-
-        <div class="mt-6 text-center text-[11px] text-slate-500">
-            🔒 256-Bit SSL Encrypted • 100% Secure Global USD Payouts
-        </div>
-
-    </div>
-
-    <script>
-        function updateTotal() {
-            var select = document.getElementById('planSelect');
-            var val = select.value;
-            document.getElementById('totalDisplay').innerText = '$' + val + '.00';
-        }
-    </script>
-</body>
-</html>
+1.  <!DOCTYPE html>
+2.  <html lang="hi">
+3.  <head>
+4.    <meta charset="UTF-8">
+5.    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6.    <title>NexShield SaaS - Global Checkout</title>
+7.    <script src="https://cdn.tailwindcss.com"></script>
+8.    
+9.    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B0GD982TX"></script>
+10.   <script>
+11.     window.dataLayer = window.dataLayer || [];
+12.     function gtag(){dataLayer.push(arguments);}
+13.     gtag('js', new Date());
+14.     gtag('config', 'G-3B0GD982TX');
+15.   </script>
+16. </head>
+17. <body class="bg-slate-950 text-white min-h-screen flex flex-col items-center justify-center p-6">
+18.     <div class="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl">
+19.         <div class="text-center mb-6">
+20.             <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/25">
+21.                 NexShield SaaS
+22.             </span>
+23.             <h1 class="text-2xl font-black mt-3">Global USD Checkout</h1>
+24.             <p class="text-slate-400 text-xs mt-1">Next-Gen Security & Anti-Bot Protection</p>
+25.         </div>
+26.         <form action="#" method="POST" class="space-y-4">
+27.             <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3">
+28.                 <div>
+29.                     <label class="block text-xs text-slate-400 mb-1">1. Select Subscription Plan</label>
+30.                     <select id="planSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
+31.                         <option value="20">Basic Plan - $20.00</option>
+32.                         <option value="80">Standard Plan - $80.00</option>
+33.                         <option value="90">Pro Plan - $90.00</option>
+34.                         <option value="125">Advanced Plan - $125.00</option>
+35.                         <option value="169" selected>Premium SaaS Model - $169.00</option>
+36.                     </select>
+37.                 </div>
+38.                 <div class="flex justify-between items-center pt-2 border-t border-slate-800">
+39.                     <span class="text-xs text-slate-400">Total Final Amount</span>
+40.                     <span id="totalDisplay" class="text-xl font-black text-blue-400">$169.00</span>
+41.                 </div>
+42.             </div>
+43.             <div>
+44.                 <label class="block text-xs font-medium text-slate-300 mb-1">2. Full Name</label>
+45.                 <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:outline-none focus:border-blue-500">
+46.             </div>
+47.             <div>
+48.                 <label class="block text-xs font-medium text-slate-300 mb-1">3. Email Address</label>
+49.                 <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:outline-none focus:border-blue-500">
+50.             </div>
+51.             <div>
+52.                 <label class="block text-xs font-medium text-slate-300 mb-1">4. Passport / Phone (Anti Fraud ID)</label>
+53.                 <input type="text" required placeholder="Enter ID or Phone Number" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:outline-none focus:border-blue-500">
+54.             </div>
+55.             <div class="flex items-start space-x-2 pt-1">
+56.                 <input type="checkbox" required class="mt-1 rounded bg-slate-950 border-slate-800 text-blue-500 focus:ring-0">
+57.                 <label class="text-[11px] text-slate-400 leading-relaxed">
+58.                     5. I agree to terms, rate-limiting rules, and automated 100% secure bot protection checks.
+59.                 </label>
+60.             </div>
+61.             <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition">
+62.                 Pay Securely Now
+63.             </button>
+64.         </form>
+65.         <div class="mt-6 text-center text-[11px] text-slate-500">
+66.             🔒 256-Bit SSL Encrypted • 100% Secure Global USD Payouts
+67.         </div>
+68.     </div>
+69.     <script>
+70.         const planSelect = document.getElementById('planSelect');
+71.         const totalDisplay = document.getElementById('totalDisplay');
+72.         planSelect.addEventListener('change', function() {
+73.             totalDisplay.textContent = '$' + this.value + '.00';
+74.         });
+75.     </script>
+76. </body>
+77. </html>
