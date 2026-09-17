@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexShield SaaS - Global Checkout</title>
+    <title>NexShield SaaS | Secure Global USD Checkout & Anti-Bot Protection</title>
+    <meta name="description" content="Choose a NexShield SaaS subscription with secure global USD checkout, rate limiting, sliding-window protection and anti-bot security for digital platforms.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://sonaramdas370-rgb.github.io/NexShield-SaaS/">
+    <link rel="alternate" hreflang="en" href="https://sonaramdas370-rgb.github.io/NexShield-SaaS/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NexShield SaaS">
+    <meta property="og:title" content="NexShield SaaS | Secure Global USD Checkout">
+    <meta property="og:description" content="Select a NexShield SaaS plan with global USD checkout and advanced rate-limiting and anti-bot protection features.">
+    <meta property="og:url" content="https://sonaramdas370-rgb.github.io/NexShield-SaaS/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NexShield SaaS | Secure Global USD Checkout">
+    <meta name="twitter:description" content="Choose a NexShield SaaS subscription with global USD checkout and anti-bot protection.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NexShield SaaS",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://sonaramdas370-rgb.github.io/NexShield-SaaS/",
+      "description": "A digital platform with global USD checkout, rate limiting, sliding-window protection and anti-bot security features.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "20.00",
+        "highPrice": "169.00",
+        "offerCount": "5",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Tag Manager -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3D0GD082TX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -15,24 +49,23 @@
       gtag('config', 'G-3D0GD082TX');
     </script>
 
-    <!-- Tidio Live Chat Script -->
+    <!-- Tidio Live Chat -->
     <script src="//code.tidio.co/q08b1h5jntzru2q6adozdletxhmwfipo.js" async></script>
 </head>
 <body class="bg-slate-950 text-white min-h-screen flex flex-col items-center justify-start p-6 pt-12 md:pt-20">
-    <div class="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl">
+    <main class="max-w-md w-full">
+      <section class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl" aria-labelledby="page-title">
         <div class="text-center mb-6">
-            <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/20">
-                NexShield SaaS
-            </span>
-            <h1 class="text-2xl font-black mt-3">Global USD Checkout</h1>
-            <p class="text-slate-400 text-xs mt-1">Next-Gen Security & Anti-Bot Protection</p>
+            <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/20">NexShield SaaS</span>
+            <h1 id="page-title" class="text-2xl font-black mt-3">Secure Global USD Checkout</h1>
+            <p class="text-slate-400 text-xs mt-1">Rate limiting, sliding-window controls and anti-bot protection for digital platforms.</p>
         </div>
 
         <form action="#" method="POST" class="space-y-4">
             <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3">
                 <div>
-                    <label class="block text-xs text-slate-400 mb-1">Select Subscription Plan</label>
-                    <select id="planSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
+                    <label for="planSelect" class="block text-xs text-slate-400 mb-1">Select a subscription plan</label>
+                    <select id="planSelect" name="plan" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
                         <option value="20" selected>Basic Plan - $20.00</option>
                         <option value="80">Standard Plan - $80.00</option>
                         <option value="90">Pro Plan - $90.00</option>
@@ -40,50 +73,45 @@
                         <option value="169">Premium SaaS Model - $169.00</option>
                     </select>
                 </div>
-
                 <div class="flex justify-between items-center pt-2 border-t border-slate-800">
-                    <span class="text-xs text-slate-400">Total Final Amount</span>
+                    <span class="text-xs text-slate-400">Total final amount</span>
                     <span id="totalDisplay" class="text-xl font-black text-blue-400">$20.00</span>
                 </div>
             </div>
 
             <div>
-                <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
-                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
+                <label for="fullName" class="block text-xs font-medium text-slate-300 mb-1">Full name</label>
+                <input id="fullName" name="name" type="text" autocomplete="name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
             </div>
-
             <div>
-                <label class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
-                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
+                <label for="email" class="block text-xs font-medium text-slate-300 mb-1">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
             </div>
-
             <div>
-                <label class="block text-xs font-medium text-slate-300 mb-1">Passport / Phone (Anti Fraud ID)</label>
-                <input type="text" required placeholder="Enter ID or Phone Number" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
+                <label for="fraudId" class="block text-xs font-medium text-slate-300 mb-1">Passport / phone (anti-fraud ID)</label>
+                <input id="fraudId" name="fraud_id" type="text" autocomplete="tel" required placeholder="Enter ID or phone number" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500">
             </div>
-
             <div class="flex items-start space-x-2 pt-1">
-                <input type="checkbox" required class="mt-1 rounded bg-slate-950 border-slate-800 text-blue-500 focus:ring-0">
-                <label class="text-[11px] text-slate-400 leading-relaxed">
-                    I agree to terms, rate-limiting rules, and automated 100% secure bot protection checks.
-                </label>
+                <input id="terms" name="terms" type="checkbox" required class="mt-1 rounded bg-slate-950 border-slate-800 text-blue-500 focus:ring-0">
+                <label for="terms" class="text-[11px] text-slate-400 leading-relaxed">I agree to the terms, rate-limiting rules and automated bot-protection checks.</label>
             </div>
-
-            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition duration-200">
-                Pay Securely Now
-            </button>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition duration-200">Pay securely now</button>
         </form>
 
-        <div class="mt-6 text-center text-[11px] text-slate-500 flex items-center justify-center gap-1">
-            🔒 256-Bit SSL Encrypted • 100% Secure Global USD Payouts
-        </div>
-    </div>
+        <p class="mt-6 text-center text-[11px] text-slate-500">🔒 256-bit SSL encrypted • Global USD subscription checkout</p>
+      </section>
+
+      <section class="mt-8 text-center text-sm text-slate-400" aria-labelledby="about-title">
+        <h2 id="about-title" class="text-lg font-bold text-white">Protection for modern digital platforms</h2>
+        <p class="mt-2 leading-6">NexShield SaaS combines subscription checkout with layered traffic controls designed to help reduce automated abuse and manage high-volume requests.</p>
+      </section>
+    </main>
 
     <script>
         const planSelect = document.getElementById('planSelect');
         const totalDisplay = document.getElementById('totalDisplay');
-        planSelect.addEventListener('change', function() {
-            totalDisplay.textContent = '$' + this.value + '.00';
+        planSelect.addEventListener('change', function () {
+            totalDisplay.textContent = '$' + Number(this.value).toFixed(2);
         });
     </script>
 </body>
